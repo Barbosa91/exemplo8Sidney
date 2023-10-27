@@ -56,72 +56,84 @@ header {
   position: relative;
 }
 #hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
 }
-#hero-text h1 {
-    text-align: center;
-    font-family: 'regular';
-    font-size: 62px;
+#slogan {
+  text-align: center;
+}
+#slogan span {
+  position: relative;
+  display: inline-block;
+  font-family: "regular";
+  font-size: 62px;
+  font-weight: bold;
+  letter-spacing: -5px;
+  animation: flip 3s infinite;
+  animation-timing-function: ease-out;
+  animation-delay: calc(100ms * var(--i));
 }
 
 #hero-text p {
-    text-align: center;
-    font-family: 'italic';
-    font-size: 50px;
+  text-align: center;
+  font-family: "italic";
+  font-size: 50px;
 }
 
-.marketing-black, .marketing-white {
-    padding: 20px;
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.marketing-black,
+.marketing-white {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .marketing-black {
-    background: var(--marketing-black-blackground);
+  background: var(--marketing-black-blackground);
 }
-.white-title, .white-description {
-    color: #fff;
+.white-title,
+.white-description {
+  color: #fff;
 }
-.white-title, .black-title {
-    font-family: 'regular';
-    font-size: 54px;   
+.white-title,
+.black-title {
+  font-family: "regular";
+  font-size: 54px;
 }
-.white-description, .black-description {
-    font-family: 'thin';
-    font-size: 32px;
+.white-description,
+.black-description {
+  font-family: "thin";
+  font-size: 32px;
 }
 .product {
-    width: 30%;
+  width: 30%;
 }
 .know-more {
-    margin: 40px 0;
-    background-color: #038aff;
-    border: none;
-    width: 200px;
-    padding: 10px 0;
-    color: white;
-    font-family: 'regular';
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
+  margin: 40px 0;
+  background-color: #038aff;
+  border: none;
+  width: 200px;
+  padding: 10px 0;
+  color: white;
+  font-family: "regular";
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .marketing-white {
-    background-color: var(--marketing-white-background);
-    
+  background-color: var(--marketing-white-background);
 }
 footer {
-    background-color: var(--footer-color);
-    padding: 10px 20px;
+  background-color: var(--footer-color);
+  padding: 10px 20px;
 }
 footer p {
-    color: #aaa;
-    font-family: 'thin';
-    font-size: 14px;
-    text-aling: center;
+  color: #aaa;
+  font-family: "thin";
+  font-size: 14px;
+  text-aling: center;
 }
